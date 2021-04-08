@@ -1,3 +1,6 @@
+import 'employee.dart';
+import 'student.dart';
+
 void main(List<String> arguments) {
   // student.name = 'omar';
   // student.age = 5;
@@ -69,26 +72,45 @@ omar => Omar
   //         ? 'negative'
   //         : 'zero';
   // print(result);
-  var mark = 1;
-  if (mark >= 90) {
-    print('A');
-  } else if (mark >= 80) {
-    print('B');
-  } else if (mark >= 70) {
-    print('C');
-  } else {
-    print('F');
-  }
-  var result = mark >= 90
-      ? 'A'
-      : mark >= 80
-          ? 'B'
-          : mark >= 70
-              ? 'C'
-              : 'F';
-  print(result);
+  // var mark = 1;
+  // if (mark >= 90) {
+  //   print('A');
+  // } else if (mark >= 80) {
+  //   print('B');
+  // } else if (mark >= 70) {
+  //   print('C');
+  // } else {
+  //   print('F');
+  // }
+  // var result = mark >= 90
+  //     ? 'A'
+  //     : mark >= 80
+  //         ? 'B'
+  //         : mark >= 70
+  //             ? 'C'
+  //             : 'F';
+  // print(result);
+  ////////////////////////////////////////
+  ///oop///////////////
+  // var student1 =
+  //     Student(address: 'gaza', age: 90, gpa: 88, isMale: true, name: 'omar');
+  // var student2 =
+  //     Student(address: 'rafah', age: 9, gpa: 77, isMale: false, name: 'soad');
+  // print(student1.age);
+
+  var employee = Employee.a(Currency.nis,
+      name: 'omar',
+      salary: 3500,
+      employeeType: EmployeeType.developer,
+      gender: Gender.male,
+      company: 'iug');
 }
 
+/// define new class called employee which has the following attributes
+/// - name, salary in dollar, company, isMale
+/// - constructor that get name, salary in nis, company, is Male
+/// - define a method called get Employee data that return one string value which contains all
+///  employee attributes
 /*
 1- return type
 2- method name
